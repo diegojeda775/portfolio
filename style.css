@@ -21,19 +21,25 @@ footer{
 }
 
 p, li{
-  color: grey;
+  color: black;
   font-family: 'Comic Sans MS'
 }
 
 section{
   text-align: center;
 }
-img, iframe { 
+img{ 
   width: 60%;	
   border-radius: 8px;
   border: 1px solid #c5c0b8;
 } 
 
-main {
+iframe { 
+  width: 60%;	
+  border-radius: 8px;
+  border: 1px solid #c5c0b8;
+} 
+
+body {
   background-color: lightseagreen;
 }
