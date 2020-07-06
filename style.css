@@ -1,7 +1,7 @@
 .logo{
   font-family: 'Trebuchet MS', cursive;
   font-size: 72px;
-  color: #000000;
+  color: #8d8d8d;
   text-align: center;
   letter-spacing: -3;
   margin: 0;
@@ -10,19 +10,26 @@
 }
 header{
   text-align: center;
-  font-family: 'Comic Sans MS';
-  background-color: beige;
+  font-family: 'Optima, sans-serif';
+  color: #8d8d8d;
+  background-color: rgba(4, 28, 44, 0.863);
 }
 
 footer{
   text-align: center;
-  font-family: 'Comic Sans MS';
-  background-color: beige;
+  font-family: 'Optima, sans-serif';
+  color: #8d8d8d;
+  background-color: rgba(4, 28, 44, 0.863);
 }
 
-p, li{
+p{
   color: black;
-  font-family: 'Comic Sans MS'
+  font-family: 'Optima, sans-serif';
+}
+
+/* remove bullets from list */
+li{
+  list-style: none;
 }
 
 section{
@@ -41,5 +48,13 @@ iframe {
 } 
 
 body {
-  background-color: lightseagreen;
+  background-color: rgba(100, 100, 100, 0.5);
+}
+/* styling for links */
+a:link { color: #1a677e; }
+a:visited { color: #1b04e6; }
+a:hover { color: #313233; }
+a:active { color: #313233; }
+a:hover {
+	text-decoration: underline;	
 }
