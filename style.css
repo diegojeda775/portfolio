@@ -42,7 +42,8 @@ img{
 } 
 
 iframe { 
-  width: 60%;	
+  width: 60%;
+  height: 600px;	
   border-radius: 8px;
   border: 1px solid #252524;
 } 
