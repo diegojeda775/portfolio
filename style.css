@@ -1,5 +1,5 @@
 .logo{
-  font-family: 'Trebuchet MS', cursive;
+  font-family: Apple Chancery, cursive;
   font-size: 72px;
   color: #8d8d8d;
   text-align: center;
@@ -10,21 +10,29 @@
 }
 header{
   text-align: center;
-  font-family: 'Optima, sans-serif';
+  font-family: 'Optima', sans-serif;
   color: #8d8d8d;
   background-color: rgba(4, 28, 44, 0.863);
 }
 
 footer{
   text-align: center;
-  font-family: 'Optima, sans-serif';
+  font-family: 'Optima', sans-serif;
   color: #8d8d8d;
   background-color: rgba(4, 28, 44, 0.863);
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+footer h3{
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 p{
   color: black;
-  font-family: 'Optima, sans-serif';
+  font-family: 'Optima', sans-serif;
+  line-height: 1.5em;
+  margin-bottom: 0;
 }
 
 /* remove bullets from list */
@@ -51,8 +59,8 @@ body {
   background-color: rgba(100, 100, 100, 0.5);
 }
 /* styling for links */
-a:link { color: #1a677e; }
-a:visited { color: #1b04e6; }
+a:link { color: #8d8d8d; }
+a:visited { color: #1a677e; }
 a:hover { color: #313233; }
 a:active { color: #313233; }
 a:hover {
@@ -90,6 +98,50 @@ form textarea {
 
 form textarea {
   height: 160px;
+}
+/* ---  Navigation --- */
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #8d8d8d;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+}
+
+@media all and (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin: 14px 0 14px 20px;
+    padding-top: 0;
+    font-size: 42px;
+  }
+  
+  header nav {
+    margin-top: 14px;
+  }
 }
 
 /* Groups & Items  (Desktop) */
