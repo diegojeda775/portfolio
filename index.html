@@ -14,7 +14,7 @@
     </header>
     <main>
     <!-- Introduction -->
-    <div class="wrapper"></div>
+    <div class="wrapper">
     <section class="group">
       <div class="item-double">
         <img src="images/me.jpeg" alt="Diego Ojeda - Profile Photo">
@@ -29,7 +29,7 @@
   </div>
     <!-- About me -->
     <hr/>
-    <div class="wrapper"></div>
+    <div class="wrapper">
     <section class="group">
       <div class="item-double">
       <h2>About Me</h2>
@@ -45,7 +45,7 @@
     <hr/>
 
     <div class="wrapper">
-      <article id="portfolio">
+      <article class="portfolio">
       <h2>Portfolio</h2>
 			<div class='group'>
 				<div class='item'>
@@ -78,6 +78,18 @@
     <section class="group" id="contact">
       <div class="item">
       <h2>Contact me</h2>
+      <form action="#" method="POST">
+        <label for="user-name">Name:</label>
+        <input id="user-name" type="text" name="name" placeholder="Enter your full name">
+        <br>
+        <label for="user-email">Email:</label>
+        <input id="user-email" type="text" name="email" placeholder="Enter your email">
+        <br>
+        <label for="user-message">Message:</label>
+        <textarea id="user-message" name="message" placeholder="Type your message"></textarea >
+        <br>
+        <button type="submit">Submit</button>
+      </form>
       <p>Feel free to contact me or follow me:</p>
       <ol>
         <li><a href="https://www.linkedin.com/in/diego-ojeda-rivera-307bb31a2" target="_blank">Linkedin</a></li>
