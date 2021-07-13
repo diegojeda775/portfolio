@@ -2,229 +2,375 @@
 <html lang="en">
   <head>
 	  <meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"  type="text/css" />
-    <title>DIEGO OJEDA DEVELOPER</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"
+    >
+    <script src="https://kit.fontawesome.com/e6d1e4b1c8.js" crossorigin="anonymous"></script>
+    <title>DEVELOPER DIEGO</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
-    <header>
-      <h1 class="logo">DIEGO OJEDA</h1>
-      <nav>
-        <ul id="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+
+  <body class='w-100 bg-secondary'>
+
+    <!-- Top Nav -->
+    <header class="bg-secondary sticky-top">
+      <div class='container'>
+        <nav class="navbar navbar-expand-md navbar-dark ">
+          <a href="#home" class="navbar-brand">DIEGO OJEDA</a>
+          <button
+          class='navbar-toggler'
+          type='button'
+          data-bs-toggle='collapse'
+          data-bs-target='#toggleMobileMenu'
+          aria-controls='toggleMobileMenu'
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav ms-auto text-center">
+              <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul> 
+          </div> 
+        </nav>
+      </div>
     </header>
-    <main>
-    <!-- Introduction -->
-    <div class="wrapper">
-    <section class="group">
-      <div class="item">
-        <img src="images/me.jpeg" alt="Diego Ojeda - Profile Photo">
-      </div>
-      <div class="item-double"> 
-        <h2>Hi, I'm Diego Ojeda.</h2>
-        <p>
-          I am a Thinkfull student learining how to be a software engineer. In my studies I'll be focusing both frontend and backend.
-          I'll be learning how to create websites/clients using javascript, css, and html. 
-          Then I'll learn jquery, react, dom manipulation, api calls and testing.
-        </p>
-        <p>
-          I will also be taught react, node.js, express and postgres to understand the server side of programming. 
-          I will be creating databases, implementing servers to accomodate api calls request and returning the correct payload to the clients.
-          I will be creating projects where I'll build the client and server, making fullstack apps.
-          Algorithms will be taught, which is very important to implement efficiency into my code. 
-        </p>
-        <p>Please take a look at my website and feel free to <a href="#contact"> Contact me!</a></p>
-      </div>
-    </section>
-  </div>
-    <!-- About me -->
-    <hr/>
-    <div class="wrapper">
-    <section class="group" id="about">
-      <div class="item-double">
-      <h2>About Me</h2>
-      <p>
-        I am originally from Peru. I grew up amazed by how technoly improves so quickly, specifically the improvement of videogames.
-        Going from the the playstation 1 to playstation 2, or mp3 players to the ipod.
-        I've always been interested in new product and services that can make life easier. 
-        So, I finally came to the conclusion that I want to be part of better advancing our lives and I can achieve that with coding.
-        Working with a team would be really good for me because I'll be able to improve my skills while collaborating to complete projects. 
-      </p>
-      <p>
-        When I'm not coding, I spend my free time either dancing, exploring or playing games. 
-        I used to be a Latin balroom dance instructor and I focused on teaching salsa and bachata. 
-        I love to travel and going on adventures to widen my horizons and I love expriencing new cultures. 
-        I grew up playing videogames since the N64 era and my favorite console is the Nintendo Switch. 
-      </p>
-      </div>
-      <div class="item">
-        <img src="images/dance.jpeg" alt="Quiz App Screenshot" class="rounded">
-      </div>
-    </section>
-  </div>
 
-    <hr/>
+    <main class="w-100">
 
-    <div class="wrapper">
-      <article class="portfolio" id="portfolio">
-      <h2>Portfolio</h2>
-			<div class='group'>
-				<div class='item'>
-          <img src="images/portfolio/quiz-app.png" alt="Quiz App Screenshot" class="rounded">
-          <h3>Quiz App</h3>
-					<p>
-            The quiz app tests the user about their knowledge on a particular subject. 
-            The user will be able to take the test where the the questions display multiple answers that be chosen.
-            The app will keep a score and will display wether the answer is right or wrong.
-            The end page will give the option to restart the quiz.
-            I created this app to learn how to keep render elements on the page.
-            Also, I want people to know a little bit more about Peru.
-          </p>
-          <div class="group">
-          <div class="item">
-            <p>Skills used:</p>
-            <ol>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-            </ol>
+      <!-- Introduction -->
+      <section class="bg-white pb-5">
+        <div class="container pt-5 " id="home">
+          <div class="row g-5 pt-3">
+            <div class="col-md-6 align-self-center">
+              <div class="text-center row g-1 pt-1">
+                <h2 class="col-12 mb-3">Hi, I'm a Software Engineer</h2>
+                  <h5 class="col-6 mt-md-4 mt-2"><i class="fab fa-js-square"></i> JS</h5>
+                  <h5 class="col-6 mt-md-4 mt-2"><i class="fab fa-react"></i> REACT</h5>
+                  <h5 class="col-6"><i class="fab fa-html5"></i> HTML</h5>
+                  <h5 class="col-6"><i class="fab fa-css3"></i> CSS</h5>
+                  <h5 class="col-12"><i class="fab fa-node"></i> Node</h5>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <img src="images/me.jpeg" alt="Diego Ojeda - Profile Photo" class="rounded mx-auto d-block">
+            </div>
           </div>
-          <div class="item">
-            <p>Links:</p>
-            <ul>
-              <li><a href="https://github.com/diegojeda775/Quiz-App" target="_blank">GitHub Repo</a></li>
-              <li><a href="https://diegojeda775.github.io/Quiz-App/" target="_blank">Live App</a></li>
-            </ul>
+        </div> 
+      </section>
+ 
+      <!-- About me -->
+      <section class="bg-light" id="about">
+        <div class="container pt-5 pb-3">
+          <h2>About Me</h2>
+          <div
+            id="carouselQuestions"
+            class="carousel carousel-dark slide pt-3 d-flex align-items-center text-center"
+            data-bs-interval="8000"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                class="active"
+                data-bs-target="#carouselQuestions"
+                data-bs-slide-to="0"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselQuestions"
+                data-bs-slide-to="1"
+                aria-current="true"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselQuestions"
+                data-bs-slide-to="2"
+                aria-current="true"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-block py-3 px-5 m-5">
+                  <h5 class=""> Who am I?  What do i  do?</h5>
+                  <p class="px-4 px-md-5 text-justify">
+                    My name is Diego Alonso Ojeda Rivera. I am a full-stack software engineer, and I was born and raised in Peru. 
+                    I began learning coding via Freecodecamp, then I decide to enroll in the engineering flex program at Thinkful. At Thinkful, 
+                    I created many projects ranging from just frontend to just backend and finally combining both to create full-stack apps. 
+                    The main technologies I used to create web apps are JavaScript, Html, Css, React, Express, Rest API’s and PostgreSQL. 
+                    I also used the crud methodology when developing Rest API's to create, read, updated and delete data.
+                     I look forward to day where I can be part of a team with diverse backgrounds, so that we can push each other to be better. 
+                  </p>
+                  <br/>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-block py-3 px-5 m-5">
+                  <h5>Background & Soft Skills</h5>
+                  <p class="px-4 px-md-5 text-justify">
+                    I was born and raised in Peru.  Since I was little, I’ve been nerdy and artistic.
+                     I have always liked to tinker with electronics, especially computers. 
+                     I have built gaming computers and upgraded/refurbish old mac laptops and desktops. 
+                     I am a dancer and I used to be a dance instructor. 
+                     I started dancing with hip-hop and then transition to partner dancing where I joined many teams to performed at different venues. 
+                     I have learned how to work in a timely manner when upgrading customer’s computers. 
+                     Also, I learned how to properly communicate with students and team members, so that everyone can be on the same page and stay up to date. 
+                     Lastly, I have learned how to listen for any feedback or instructions so that I could improve on how I do any task.
+                  </p>
+                  <br/>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-block py-3 px-5 m-5">
+                  <h5>When I'm not coding...</h5>
+                  <p class="px-4 px-md-5 text-justify">
+                    I like doing many different activities. I like taking dance classes and going out social dancing. 
+                    I like watching sci/fi-fantasy shows and movies like my favorite movie “Spirited Away”. 
+                    I like playing videogames in the MOBA genre like “Teamfight Tactics”. I like board games and trading card games like “Magic the Gathering TCG”. 
+                    I like to stay informed any new technology or products that are coming out to the market like when a new software update comes to the iPhone or mac. 
+                    I love traveling to experience new cultures and adventures like hiking Machu Picchu, snorkeling in Hawaii or swimming with the wild pigs in the Bahamas. 
+                    I love experiencing new food like going to the Hell’s Kitchen restaurant or going a Japanese restaurant to try Takoyaki (octopus’ balls). 
+                    I am a person who likes to try new things.
+                  </p>
+                  <br/>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselQuestions"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselQuestions"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
+        </div>
+      </section>
+    
+
+    <!-- Portfolio -->
+      <section class="bg-white pb-5">
+        <div class="container pt-5" id="portfolio" >
+          <h2 class="pt-3">Portfolio</h2>
+          <div class="row g-2">
+            
+            <div class="card col-md-6 p-3" >
+              <img src="images/portfolio/quiz-app.png" alt="Quiz App Screenshot" class="img-fluid card-image-top" >
+              <div class="card-body">
+                <h3 class="card-title">Quiz App</h3>
+                <p class="card-text">
+                  The quiz app tests the user about their knowledge on a particular subject. 
+                  The user will be able to take the test where the the questions display multiple answers that be chosen.
+                  The app will keep a score and will display wether the answer is right or wrong.
+                  The end page will give the option to restart the quiz.
+                  I created this app to learn how to keep render elements on the page.
+                  Also, I want people to know a little bit more about Peru.
+                </p>
+                <div class="align-self-center">
+                  <p>Skills used:</p>
+                  <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                  </ol>
+                </div>
+                <div class="">
+                  <a href="https://github.com/diegojeda775/Quiz-App" target="_blank" class="btn btn-primary"><i class="bi bi-github"></i>
+                    Repo</a>
+                  <a href="https://diegojeda775.github.io/Quiz-App/" target="_blank" class="btn btn-success">Demo</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card col-md-6 p-3">
+              <img src="images/portfolio/subject-finder.png" alt="Bookmark App Screenshot" class="rounded" style="width: 100%">
+              <div class="card-body">
+                <h3>Subject Finder App</h3>
+                <p>
+                  This app allows the user to find books or youtube videos on the desired subject or topic. 
+                  The user types a subject and calls the api when clicking the button. 
+                  The user will be able to click on the desired card to be redirected to the card website.
+                  I create this app for people who use youtube as a place for learning as I do, while also providing books as an alternative.
+                </p>
+                <div >
+                  <p>Skills used:</p>
+                  <ol>
+                    <li>Api calls</li>
+                    <li>Jquery</li>
+                    <li>CSS</li>
+                  </ol>
+                </div>
+                <div class="">
+                    <a href="https://github.com/diegojeda775/Subject-Finder" target="_blank" class="btn btn-primary position-relative"><i class="bi bi-github"></i>
+                      Repo</a>
+                    <a href="https://diegojeda775.github.io/Subject-Finder/" target="_blank" class="btn btn-success position-relative">Demo</a>
+                </div>
+              </div>
+            </div>
+          
+            <div class="card col-md-6 p-3">
+              <img src="images/portfolio/gear-vault.png" alt="Pet App Screenshot" class="rounded" style="width: 100%">
+              <div class="card-body">
+                <h3>Gear Vault App</h3>
+                <p>
+                  In this app the user is able to input information about their gear or equipment for insurance purposes. 
+                  Once the information is added, a list of items is rendered and the items can be clicked to access all the information. 
+                  The user will be able to delete the item when they are in the detail page of the item.
+                  I creative this app for people in the entertaining industry like youtube, where people or company have to purchase gear in order to make new content.
+                </p>
+                <div class="item">
+                  <p>Skills used:</p>
+                  <ol>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>PostgreSQL</li>
+                  </ol>
+                </div>
+                <div class="">
+                    <a 
+                      href="https://github.com/diegojeda775/gear-vault-app" 
+                      target="_blank" 
+                      class="btn btn-primary position-relative"
+                      >
+                      <i class="bi bi-github"></i>
+                        Repo
+                    </a>
+                    <a 
+                      href="https://gear-vault-app.vercel.app/" 
+                      target="_blank" 
+                      class="btn btn-success position-relative"
+                      >
+                      Demo
+                    </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card col-md-6 p-3">
+              <img src="images/portfolio/card-keeper.png" alt="Team Project Screenshot" class="rounded" style="width: 100%">
+              <div class="card-body">
+                <h3>Card Keeper App</h3>
+                <p>
+                  This app was created for those who want a central place to keep track on any Magic the Gathering cards . 
+                  In this app, the user will be able to read and create sets and cards. 
+                  Once the user navigates to the Cards tab at the top of the page, A list of sets and cards will be rendered. 
+                  The user can click the add button to fill out a form and add either a set or card to the database. 
+                  I create this app for people who own Magic the Gathering cards and would like to have a central place to keep track of the cards.
+                </p>
+                <div class="item">
+                  <p>Skills used:</p>
+                  <ol>
+                    <li>React</li>
+                    <li>Express</li>
+                    <li>PostgreSQL</li>
+                  </ol>
+                </div>
+                <div class="">
+                    <a 
+                      href="https://github.com/diegojeda775/card-keeper-client" 
+                      target="_blank" class="btn btn-primary position-relative"
+                      >
+                      <i class="bi bi-github"></i>
+                        Repo
+                    </a>
+                    <a 
+                      href="https://card-keeper-client.vercel.app/" 
+                      target="_blank" class="btn btn-success position-relative"
+                      >
+                      Demo
+                    </a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-				<div class='item'>
-          <img src="images/portfolio/subject-finder.png" alt="Bookmark App Screenshot" class="rounded">
-          <h3>Subject Finder App</h3>
-					<p>
-            This app allows the user to find books or youtube videos on the desired subject or topic. 
-            The user types a subject and calls the api when clicking the button. 
-            The user will be able to click on the desired card to be redirected to the card website.
-            I create this app for people who use youtube as a place for learning as I do, while also providing books as an alternative.
-          </p>
-          <div class="group">
-            <div class="item">
-              <p>Skills used:</p>
-              <ol>
-                <li>Api calls</li>
-                <li>Jquery</li>
-                <li>CSS</li>
-              </ol>
+      </section>
+    
+
+      <!-- contact me -->
+      <section class="pt-5 bg-light" id="contact">
+        <div class="container">
+          <h2 class="pt-3">Contact me</h2>
+          <div class="row g-5 m-1">
+            <form action="https://formspree.io/meqrnjrl" method="POST" class="row g-3 col-md-6">
+              <div class="col-md-4">
+                <label for="user-name" class="form-label">Name:</label>
+                <input id="user-name" type="text" class="form-control" name="name" placeholder="Enter your full name">
+              </div>
+              <div class="col-md-8">
+                <label for="user-email" class="form-label">Email:</label>
+                <input id="user-email" type="text" class="form-control" name="email" placeholder="Enter your email" aria-describedby="emailHelp">
+              </div>
+              <div class="col-md-12">
+                <label for="user-message" class="form-label">Message:</label>
+                <textarea id="user-message" name="message" class="form-control" rows="3" placeholder="Type your message"></textarea>
+              </div>
+              <div class="col-md-12">
+                <button type="submit" class="btn btn-primary" ><i class="bi bi-envelope"></i> Send</button>
+              </div>
+                       
+            </form>
+
+            <!-- map -->
+            <div class="col-md-6 ">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423283.43555647036!2d-118.69192104680025!3d34.02073049658871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1593809189315!5m2!1sen!2sus" 
+                allowfullscreen="" 
+              ></iframe>
             </div>
-            <div class="item">
-              <p>Links:</p>
-              <ul>
-                <li><a href="https://github.com/diegojeda775/Subject-Finder" target="_blank">GitHub Repo</a></li>
-                <li><a href="https://diegojeda775.github.io/Subject-Finder/" target="_blank">Live App</a></li>
-              </ul>
-            </div>
-            </div>
+          </div>
         </div>
-			</div>
-      <div class='group'>
-				<div class='item'>
-          <img src="images/portfolio/gear-vault.png" alt="Pet App Screenshot" class="rounded">
-          <h3>Gear Vault App</h3>
-          <p>
-            In this app the user is able to input information about their gear or equipment for insurance purposes. 
-            Once the information is added, a list of items is rendered and the items can be clicked to access all the information. 
-            The user will be able to delete the item when they are in the detail page of the item.
-            I creative this app for people in the entertaining industry like youtube, where people or company have to purchase gear in order to make new content.
-          </p>
-          <div class="group">
-            <div class="item">
-              <p>Skills used:</p>
-              <ol>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>PostgreSQL</li>
-              </ol>
-            </div>
-            <div class="item">
-              <p>Links:</p>
-              <ul>
-                <li><a href="https://github.com/diegojeda775/gear-vault-app" target="_blank">GitHub Repo</a></li>
-                <li><a href="https://gear-vault-app.vercel.app/" target="_blank">Live App</a></li>
-              </ul>
-            </div>
-            </div>
-        </div>
-				<div class='item'>
-          <img src="images/portfolio/card-keeper.png" alt="Team Project Screenshot" class="rounded">
-          <h3>Team Project App</h3>
-					<p>
-            This app was created for those who want a central place to keep track on any Magic the Gathering cards . 
-            In this app, the user will be able to read and create sets and cards. 
-            Once the user navigates to the Cards tab at the top of the page, A list of sets and cards will be rendered. 
-            The user can click the add button to fill out a form and add either a set or card to the database. 
-            I create this app for people who own Magic the Gathering cards and would like to have a central place to keep track of the cards.
-          </p>
-          <div class="group">
-            <div class="item">
-              <p>Skills used:</p>
-              <ol>
-                <li>React</li>
-                <li>Express</li>
-                <li>PostgreSQL</li>
-              </ol>
-            </div>
-            <div class="item">
-              <p>Links:</p>
-              <ul>
-                <li><a href="https://github.com/diegojeda775/card-keeper-client" target="_blank">GitHub Repo</a></li>
-                <li><a href="https://card-keeper-client.vercel.app/" target="_blank">Live App</a></li>
-              </ul>
-            </div>
-            </div>
-        </div>
-			</div>
-      </article>
-    </div>
-    <!-- contact me -->
-    <hr/>
-    <section class="group" id="contact">
-      <div class="item">
-        <h2>Contact me</h2>
-        <form action="https://formspree.io/meqrnjrl" method="POST">
-          <label for="user-name">Name:</label>
-          <input id="user-name" type="text" name="name" placeholder="Enter your full name">
-          <br>
-          <label for="user-email">Email:</label>
-          <input id="user-email" type="text" name="email" placeholder="Enter your email">
-          <br>
-          <label for="user-message">Message:</label>
-          <textarea id="user-message" name="message" placeholder="Type your message"></textarea >
-          <br>
-          <button type="submit">Submit</button>
-        </form>
-        <p>Feel free to email or follow me:</p>
-        <ol>
-          <li><a href="mailto:diegoojedarivera@gmail.com?subject=Re:contact">Email Me</a></li>
-          <li><a href="https://www.linkedin.com/in/diego-ojeda-rivera-307bb31a2" target="_blank">Linkedin</a></li>
-          <li><a href="https://github.com/diegojeda775" target="_blank">GitHub</a></li>
-        </ol>
-      </div>
-      <!-- map -->
-      <div class="item-double">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423283.43555647036!2d-118.69192104680025!3d34.02073049658871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1593809189315!5m2!1sen!2sus" allowfullscreen="" ></iframe>
-      </div>
-    </section>
+      </section>
+
     </main>
-    <footer>
-      <h3> &copy; Diego Ojeda</h3>
+
+    <footer  class="bg-secondary mb-0 pb-0">
+      <div class="container">
+        <div  class="row g-2">
+          <h3 class="text-center text-light col-md-6 py-md-4 py-2"> &copy; Diego Alonso Ojeda Rivera</h3>
+          <div class="row g-1 g-md-3 col-md-6">  
+            <a href="https://www.linkedin.com/in/diegoojedar/" target="_blank" class="btn col-4 btn-lg text-light"><h3><i class="bi bi-linkedin"></i></h3></a>
+            <a href="https://github.com/diegojeda775" target="_blank" class="btn col-4 btn-lg text-light"><h3><i class="bi bi-github"></i></h3></a>
+            <a href="mailto:diegoojedarivera@gmail.com?subject=Re:contact" class="btn col-4 btn-lg text-light"><h3><i class="bi bi-envelope-fill"></i></h3></a>
+          </div>
+        </div>
+        
+      </div>
     </footer>  
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
+ 
